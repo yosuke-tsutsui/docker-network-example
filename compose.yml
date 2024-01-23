@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  php1:
+    image: php:apache-bullseye
+    volumes:
+      - ./index1.php:/var/www/html/index.php
+  php2:
+    image: php:apache-bullseye
+    volumes:
+      - ./index2.php:/var/www/html/index.php
